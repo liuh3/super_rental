@@ -1,0 +1,29 @@
+<div class="jumbo">
+	<h2>New Rental</h2>
+	<div class="listing">
+		<form {{action 'save' on="submit"}}>
+			<div class="new title">
+				Title: {{input type="text" valueBinding="title"}}
+			</div>
+			<div class="new owner">
+				Owner: {{input type="text" valueBinding="owner"}}
+			</div>
+
+			<div class="new type">
+				Type: {{input type="text" valueBinding="type"}}
+			</div>
+			<br>
+			<div class="new location">
+				Location: {{input type="text" valueBinding="location"}}
+			</div>
+			<br>
+			<div class="new bedrooms">
+				Number of bedrooms: {{input type="text" valueBinding="bedrooms"}}
+			</div>
+			<br>
+			<input type="submit" value="Submit" class="button">
+		</form>
+	</div>
+
+</div>
+
